@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-import { Toaster } from 'react-hot-toast'
+import { Toaster } from 'react-hot-toast';
 
 import { Header } from '@/components/organisms';
 
@@ -13,7 +13,7 @@ const Layout = ({ children }: Props) => {
     <>
       <Toaster />
       <Header />
-      {children}
+      <main className='container mx-auto'>{children}</main>
     </>
   );
 };

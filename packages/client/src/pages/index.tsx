@@ -1,7 +1,9 @@
+import { HomePage } from "@/components/templates"
+
 export default function Home() {
   return (
     <>
-      <main>Main</main>
+      <HomePage />
     </>
   );
 }

@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 
 import { toast } from 'react-hot-toast';
 
-import { Button, CurrentAccount, SiteTitle } from '@/components/atoms';
+import { Button, CurrentAccount, HeaderTitle } from '@/components/atoms';
 import { MenuList } from '@/components/molecules';
 import { menuList } from '@/constants';
 import { useMetaMaskContext } from '@/context/MetaMaskContext';
@@ -26,7 +26,7 @@ const Header = () => {
     <>
       <div className=' w-full border-b flex justify-center items-center'>
         <div className='container flex justify-between items-center px-12 py-4 '>
-          <SiteTitle siteTitle='Next.js' />
+          <HeaderTitle headerTitle='👋 CONNECT WALLET WEB3' />
           <MenuList menus={menuList} />
           {!metaMaskContext?.currentAccount ? (
             <Button
